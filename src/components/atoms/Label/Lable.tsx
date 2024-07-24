@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { FC, ReactNode } from 'react'
 
-function Lable() {
-  return <div>{'ㅎㅇ'}</div>
+export interface LableProps {
+  variant: 'primary' | 'secondary'
+  children: ReactNode
+}
+
+const Lable: FC<LableProps> = ({ variant, children }) => {
+  return <span className={`lable ${variant}`}>{children}</span>
 }
 
 export default Lable
