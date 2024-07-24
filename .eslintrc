@@ -4,7 +4,7 @@
     "es2021": true,
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint", "prettier", "@emotion"],
   "extends": [
     "airbnb",
     "airbnb/hooks",
@@ -30,7 +30,6 @@
     "no-debugger": "off",
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/function-component-definition": [2, { "namedComponents": ["arrow-function", "function-declaration"] }],
-    "react/react-in-jsx-scope": 0,
     "react/prefer-stateless-function": 0,
     "react/jsx-one-expression-per-line": 0,
     "no-nested-ternary": 0,
@@ -43,7 +42,10 @@
     "import/no-extraneous-dependencies": 0,
     "no-shadow": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "react/react-in-jsx-scope": "off",
+    "react/no-unknown-property": ["error", { "ignore": ["css"] }],
   },
+
   "settings": {
     "import/resolver": {
       "node": {
