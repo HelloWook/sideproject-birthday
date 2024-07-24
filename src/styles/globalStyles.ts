@@ -5,8 +5,6 @@ import fontFaces from './globalFont'
 const GlobalStyles = css`
   ${fontFaces}
 
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
   /* CSS Reset */
   html,
   body,
@@ -136,6 +134,7 @@ const GlobalStyles = css`
   body {
     margin: 0;
     padding: 0;
+    font-family: 'Ownglyph_UNZ-Rg';
   }
 `
 
