@@ -9,6 +9,7 @@ export interface TitleProps {
 const PrimaryTitle = styled.h1`
   color: black;
   font-size: 32px;
+  text-align: center;
 `
 
 function Title({ variant, children }: TitleProps) {
