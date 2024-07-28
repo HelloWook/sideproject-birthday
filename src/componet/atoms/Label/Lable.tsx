@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import React, { ReactNode } from 'react'
+import React, { FC, ReactNode } from 'react'
 
 export interface LableProps {
   variant: 'primary' | 'secondary'
@@ -7,10 +7,11 @@ export interface LableProps {
 }
 
 const PrimarySpan = styled.span`
-  color: black;
+  font-size: 20px;
+  color: rebeccapurple;
 `
 
-function Lable({ variant, children }: LableProps) {
+const Lable: FC<LableProps> = ({ variant, children }) => {
   return <PrimarySpan className={`lable ${variant}`}>{children}</PrimarySpan>
 }
 
