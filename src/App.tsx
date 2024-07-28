@@ -1,9 +1,9 @@
-import Lable from './componet/atoms/Label/Lable'
+import Header from './organsim/Header'
 
 function App() {
   return (
     <div className={'App'}>
-      <Lable variant={'primary'}>{'안녕'}</Lable>
+      <Header />
     </div>
   )
 }

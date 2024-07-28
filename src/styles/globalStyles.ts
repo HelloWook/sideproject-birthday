@@ -135,6 +135,9 @@ const GlobalStyles = css`
     margin: 0;
     padding: 0;
     font-family: 'Ownglyph_UNZ-Rg';
+    font-size: 32px;
+    max-width: 1000px;
+    margin: auto;
   }
 `
 

@@ -7,8 +7,7 @@ export interface LableProps {
 }
 
 const PrimarySpan = styled.span`
-  font-size: 20px;
-  color: rebeccapurple;
+  color: black;
 `
 
 function Lable({ variant, children }: LableProps) {
