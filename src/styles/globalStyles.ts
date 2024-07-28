@@ -138,9 +138,9 @@ const GlobalStyles = css`
     font-size: 32px;
     max-width: 1000px;
     margin: auto;
-    background-color: #fde9e8; /* 배경 색상 */
+    background-color: #fde9e8;
     background-image: radial-gradient(#ffd1dc 1px, transparent 1px);
-    background-size: 10px 10px; /* 점 간격 조정 */
+    background-size: 10px 10px;
   }
 `
 
