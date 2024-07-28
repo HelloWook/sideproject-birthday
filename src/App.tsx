@@ -1,10 +1,15 @@
-import Header from './component/organsim/Header'
+import React from 'react'
+import { Global } from '@emotion/react'
+import { RouterProvider } from 'react-router-dom'
+import GlobalStyles from './styles/globalStyles'
+import router from './router'
 
-function App() {
+const App = () => {
   return (
-    <div className={'App'}>
-      <Header />
-    </div>
+    <>
+      <RouterProvider router={router} />
+      <Global styles={GlobalStyles} />
+    </>
   )
 }
 
