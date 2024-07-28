@@ -135,13 +135,13 @@ const GlobalStyles = css`
     margin: 0;
     padding: 0;
     font-family: 'Ownglyph_UNZ-Rg';
-  }
-  #root {
     font-size: 32px;
     max-width: 1000px;
-    height: 2000px;
+
     margin: auto;
-    background-color: #ffd1dc;
+    background-color: #fde9e8; /* 배경 색상 */
+    background-image: radial-gradient(#ffd1dc 1px, transparent 1px);
+    background-size: 10px 10px; /* 점 간격 조정 */
   }
 `
 
