@@ -1,4 +1,4 @@
-import Header from './organsim/Header'
+import Header from './componet/organsim/Header'
 
 function App() {
   return (

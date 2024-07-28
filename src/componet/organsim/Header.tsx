@@ -1,5 +1,5 @@
 import styled from '@emotion/styled'
-import Lable from '../componet/atoms/Label/Lable'
+import Lable from '../atoms/Label/Lable'
 
 const HeaderStyled = styled.header`
   padding: 2rem;
