@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 import Lable from '../componet/atoms/Label/Lable'
 
 const HeaderStyled = styled.header`
-  margin-top: 1.5rem;
+  padding: 2rem;
   display: flex;
   justify-content: space-between;
 `
