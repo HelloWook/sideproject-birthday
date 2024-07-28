@@ -1,5 +1,5 @@
-import Header from './componet/organsim/Header'
-import Lable from './componet/atoms/Label/Lable'
+import Header from './component/organsim/Header'
+import Lable from './component/atoms/Label/Lable'
 
 function App() {
   return (
