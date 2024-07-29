@@ -1,9 +1,9 @@
 import { createBrowserRouter } from 'react-router-dom'
-import Header from './component/organsims/Header'
-import Memory from './component/pages/Memory'
-import Photo from './component/pages/Photo'
-import Letter from './component/pages/Letter'
-import Gift from './component/pages/Gift'
+import Header from './component/organsims/Header/Header'
+import Memory from './component/pages/Memory/Memory'
+import Photo from './component/pages/Photo/Photo'
+import Letter from './component/pages/Letter/Letter'
+import Gift from './component/pages/Gift/Gift'
 
 const router = createBrowserRouter([
   {

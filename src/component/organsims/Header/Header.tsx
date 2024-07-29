@@ -1,6 +1,6 @@
 import styled from '@emotion/styled'
 import { Link, Outlet } from 'react-router-dom'
-import Lable from '../atoms/Label/Lable'
+import Lable from '../../atoms/Label/Lable'
 
 const HeaderStyled = styled.ul`
   padding: 2rem;
