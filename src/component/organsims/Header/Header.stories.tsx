@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Header from './Header'
 
 const meta: Meta<typeof Header> = {
-  title: 'Atomci/Organsim/Header',
+  title: 'Atomic/Organsim/Header',
   component: Header,
 }
 
