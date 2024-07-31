@@ -18,7 +18,7 @@ function Header() {
         <HeaderStyled>
           <li>
             <LinkStyled to={'/'}>
-              <Lable variant={'primary'}>{'💗추억의 순간'}</Lable>
+              <Lable variant={'primary'}>{'💗생일 축하 공연!'}</Lable>
             </LinkStyled>
           </li>
           <li>

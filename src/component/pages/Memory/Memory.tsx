@@ -1,8 +1,14 @@
 import React from 'react'
 import Title from '../../atoms/Title/Title'
+import Iframe from '../../atoms/Iframe/iframe'
 
 function Memory() {
-  return <Title variant={'primary'}>{'우리의 추억 돌아보기'}</Title>
+  return (
+    <>
+      <Title variant={'primary'}>{'생일 축하합니다!'}</Title>
+      <Iframe />
+    </>
+  )
 }
 
 export default Memory

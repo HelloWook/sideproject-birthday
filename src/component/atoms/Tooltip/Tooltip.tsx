@@ -23,7 +23,7 @@ const Content = styled.div`
   z-index: 1;
   bottom: 70%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 180%);
   opacity: 0;
   transition: opacity 0.3s;
 
