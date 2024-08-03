@@ -8,10 +8,8 @@ interface WebcamComponentProps {
 }
 
 const CameraStyled = styled.div`
-  margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+  display: block;
+  margin-top: 3rem;
 `
 
 const Camera = forwardRef<Webcam, WebcamComponentProps>(function Camera({ width, height }, ref) {

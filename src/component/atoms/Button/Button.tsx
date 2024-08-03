@@ -9,11 +9,18 @@ type ButtonProps = {
 
 const ButtonStyled = styled.button`
   border-radius: 8px;
-  background-color: #c28bf5;
   background-size: 10px 10px;
   font-size: 1.6rem;
   font-family: 'Ownglyph_UNZ-Rg';
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
+  &.primary {
+    background-color: #c28bf5;
+    width: 120px;
+  }
+  &.capture {
+    background-color: #ad5ef6;
+    width: 140px;
+  }
 `
 
 function Button({ variant, children, clickEvent }: ButtonProps) {
