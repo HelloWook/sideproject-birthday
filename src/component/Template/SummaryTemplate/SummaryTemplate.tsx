@@ -1,36 +1,36 @@
 import React from 'react'
-import Tooltip from '../atoms/Tooltip/Tooltip'
-import Title from '../atoms/Title/Title'
-import Image from '../atoms/Image/image'
-import useModal from '../../hooks/useModal'
+import Tooltip from '../../atoms/Tooltip/Tooltip'
+import Title from '../../atoms/Title/Title'
+import Image from '../../atoms/Image/image'
+import useModal from '../../../hooks/useModal'
 
-interface LetterTemplateProps {
+interface SummaryTemplateProps {
   tooltipMessage: string
   titleMessage: string
   imageUrl: string
   imageAlt: string
-  modalTitel: string
+  modalTitle: string
   MoodalMessage: string
 }
 
-function LetterTemplate({
+function SummaryTemplate({
   tooltipMessage,
   titleMessage,
   imageUrl,
   imageAlt,
-  modalTitel,
+  modalTitle,
   MoodalMessage,
-}: LetterTemplateProps) {
+}: SummaryTemplateProps) {
   const { openModal, ModalComponent } = useModal()
   return (
     <div>
       <Tooltip message={tooltipMessage}>
         <Title variant={'primary'}>{titleMessage}</Title>
         <Image url={imageUrl} alt={imageAlt} onClick={openModal} />
-        <ModalComponent title={modalTitel}>{MoodalMessage}</ModalComponent>
+        <ModalComponent title={modalTitle}>{MoodalMessage}</ModalComponent>
       </Tooltip>
     </div>
   )
 }
 
-export default LetterTemplate
+export default SummaryTemplate

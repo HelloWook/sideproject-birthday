@@ -15,7 +15,7 @@ const ButtonStyled = styled.button`
   padding: 0.2rem 0.8rem 0.2rem 0.8rem;
   &.primary {
     background-color: #c28bf5;
-    width: 120px;
+    width: 100px;
   }
   &.capture {
     background-color: #ad5ef6;

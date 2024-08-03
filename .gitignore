@@ -24,3 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 *storybook.log
+
+# 필요없는 파일 
+summary

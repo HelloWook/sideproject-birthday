@@ -20,6 +20,9 @@ const ModalStyled = styled.div`
   padding: 8px;
   position: relative;
   text-align: center;
+  h1 {
+    margin-bottom: 30px;
+  }
   button {
     position: absolute;
     bottom: 10px;
