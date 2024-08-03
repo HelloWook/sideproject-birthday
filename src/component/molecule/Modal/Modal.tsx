@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react'
 import styled from '@emotion/styled'
-import Title from '../atoms/Title/Title'
-import Lable from '../atoms/Label/Lable'
-import Overlay from '../atoms/Overlay/Overlay'
-import Button from '../atoms/Button/Button'
+import Title from '../../atoms/Title/Title'
+import Lable from '../../atoms/Label/Lable'
+import Overlay from '../../atoms/Overlay/Overlay'
+import Button from '../../atoms/Button/Button'
 
 interface ModalProps {
   title: string

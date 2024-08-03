@@ -2,10 +2,12 @@ import styled from '@emotion/styled'
 import React from 'react'
 
 const Container = styled.div`
-  width: 1000px;
+  max-width: 1050px;
   height: 600px;
   padding: 3rem;
   margin: auto;
+  display: flex;
+  justify-content: center;
 `
 
 function Iframe() {
