@@ -4,6 +4,8 @@ import styled from '@emotion/styled'
 import confetti from 'canvas-confetti'
 import Camera from '../../atoms/WebCam/Camera'
 import Button from '../../atoms/Button/Button'
+import dataURItoBlob from '../../../util/dataURLtoBlob'
+import downloadImage from '../../../util/downloadImage'
 
 const CaptureStyled = styled.div`
   display: flex;
@@ -20,8 +22,7 @@ const Capture: React.FC = () => {
       if (imageSrc) {
         const blob = dataURItoBlob(imageSrc)
         const url = URL.createObjectURL(blob)
-        downloadImage(url, 'capture.jpg')
-
+        downloadImage(url, '오늘의 주인공!.jpg')
         confetti({
           particleCount: 100,
           spread: 70,
@@ -35,25 +36,6 @@ const Capture: React.FC = () => {
       }
     }
   }, [webcamRef])
-
-  const dataURItoBlob = (dataURI: string) => {
-    const byteString = atob(dataURI.split(',')[1])
-    const mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0]
-    const ab = new ArrayBuffer(byteString.length)
-    const ia = new Uint8Array(ab)
-    for (let i = 0; i < byteString.length; i += 1) {
-      ia[i] = byteString.charCodeAt(i)
-    }
-    return new Blob([ab], { type: mimeString })
-  }
-
-  const downloadImage = (url: string, filename: string) => {
-    const a = document.createElement('a')
-    a.href = url
-    a.download = filename
-    a.click()
-    URL.revokeObjectURL(url)
-  }
 
   return (
     <CaptureStyled>
